@@ -1,0 +1,20 @@
+#accion {
+    text-align: center;
+}
+
+#resultado {
+    text-align: center;
+}
+
+#temporizador {
+    text-align: center;
+    font-size: 50px;
+}
+
+#desafio {
+    text-align: center;
+}
+
+.ocultar {
+    visibility: hidden;
+}

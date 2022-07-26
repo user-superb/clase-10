@@ -6,16 +6,26 @@
 </head>
 <body>
     <div id="juego">
-        <h1 id="accion" class="ocultar">Simon dice...</h1>
         <p id="temporizador">5</p>
-        <div id="desafio">
-
-        </div>
-        <div id="resultado">
-            <p id="correcto" class="ocultar">Tu respuesta es correcta!</p>
-            <p id="incorrecto" class="ocultar">Tu respuesta es incorrecta!</p>
-            <p id="noDijo" class="ocultar">Simon no ha dicho nada!</p>
+        <div id="cajaObjetivo"></div>
+        <div id="desafio-colores" class="">
+            <div>
+                <div id="caja1" class="caja"></div>
+                <div id="caja2" class="caja"></div>
+            </div>
+            <div>
+                <div id="caja3" class="caja"></div>
+                <div id="caja4" class="caja"></div>
+            </div>
+            <div>
+                <div id="caja5" class="caja"></div>
+                <div id="caja6" class="caja"></div>
+            </div>
         </div>
     </div>
+    <p id="resultado"></p>
+    <p id="puntos">0</p>
+    <script src="./js/desafioColores.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

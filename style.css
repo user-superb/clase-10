@@ -4,6 +4,12 @@
 
 #resultado {
     text-align: center;
+    font-size: 20px;
+}
+
+#puntos {
+    text-align: center;
+    margin-top: 28px;
 }
 
 #temporizador {
@@ -11,8 +17,23 @@
     font-size: 50px;
 }
 
-#desafio {
-    text-align: center;
+#desafio-colores{
+    display: flex;
+    justify-content: center;
+}
+
+#cajaObjetivo {
+    height: 100px;
+    width: 100px;
+    border: 3px black solid;
+    margin:auto;
+    margin-bottom: 75px;
+}
+
+.caja {
+    height: 100px;
+    width: 100px;
+    border: 3px black solid;
 }
 
 .ocultar {

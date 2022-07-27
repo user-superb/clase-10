@@ -4,8 +4,6 @@
     const $temporizador = document.querySelector('#temporizador');
     const $resultado = document.querySelector('#resultado');
     const $puntos = document.querySelector('#puntos');
-<<<<<<< Updated upstream
-=======
 
     const $desafioColores = document.querySelector('#desafio-colores');
 
@@ -14,27 +12,10 @@
     const $enviar = document.querySelector('#enviar');
     let $respuesta = document.querySelector('#respuesta');
     let resultadoCorrecto;
->>>>>>> Stashed changes
 
     const mensajeEsCorrecto = 'Tu respuesta es correcta!';
     const mensajeEsIncorrecto = 'Tu respuesta es incorrecta!';
 
-<<<<<<< Updated upstream
-=======
-    class desafio{
-        constructor(elem, func){
-            this.elem = elem; // Guarda el elemento
-            this.func = func; // Guarda la funcion a llamar
-        }
-    };
-
-    let desafioColores = new desafio($desafioColores, llamarDesafioColores);
-    let desafioNumeros = new desafio($desafioNumeros, llamarDesafioNumeros);
-
-    const desafios = [desafioColores, desafioNumeros];
-
-    const segundos = 5; // Intervalo entre cada juego
->>>>>>> Stashed changes
 
     let yaRespondio = true; // Para que el usuario no cambie la respuesta cuando ya respondio
     let cantidadPuntos = 0;
@@ -163,19 +144,6 @@
         };
     };
 
-<<<<<<< Updated upstream
-    function inicializar(){
-        asignarColores(); 
-        asignarObjetivo(); 
-        reiniciarRespuesta();
-    };
-
-
-    // Temporizador
-
-    const segundos = 5;
-    $temporizador.textContent = segundos;
-=======
     function iniciarJuego(){
         $temporizador.textContent = 3;
         $temporizador.classList.remove('ocultar');
@@ -186,7 +154,6 @@
 
         setInterval(cuentaAtras,1000);
     };
->>>>>>> Stashed changes
 
     inicializar();
     setInterval(cuentaAtras,1000);

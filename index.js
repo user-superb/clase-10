@@ -4,10 +4,12 @@
     const $desafioColores = document.querySelector('#desafio-colores');
     const $resultado = document.querySelector('#resultado');
     const $puntos = document.querySelector('#puntos');
+    const $iniciar = document.querySelector('#iniciar');
 
     const mensajeEsCorrecto = 'Tu respuesta es correcta!';
     const mensajeEsIncorrecto = 'Tu respuesta es incorrecta!';
 
+    const segundos = 5; // Intervalo entre cada juego
 
     let yaRespondio; // Para que el usuario no cambie la respuesta cuando ya respondio
     let cantidadPuntos = 0;
@@ -38,12 +40,11 @@
         reiniciarRespuesta();
     };
 
+    function iniciarJuego(){
+        $temporizador.textContent = segundos;
 
-    // Temporizador
+        inicializar();
+        setInterval(cuentaAtras,1000);
+    };
 
-    const segundos = 5;
-    $temporizador.textContent = segundos;
-
-    inicializar();
-    setInterval(cuentaAtras,1000);
-    
+    $iniciar.onclick = iniciarJuego;

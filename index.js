@@ -16,10 +16,22 @@
     const mensajeEsCorrecto = 'Tu respuesta es correcta!';
     const mensajeEsIncorrecto = 'Tu respuesta es incorrecta!';
 
+    class desafio {
+        constructor(elem, func){
+            this.elem = elem;
+            this.func = func;
+        }
+    };
 
+    const desafioColores = new desafio($desafioColores, llamarDesafioColores);
+    const desafioNumeros = new desafio($desafioNumeros, llamarDesafioNumeros);
+
+    const desafios = [desafioColores, desafioNumeros];
+
+    let segundos = 5; // Guarda el intervalo entre cada turno 
     let yaRespondio = true; // Para que el usuario no cambie la respuesta cuando ya respondio
     let cantidadPuntos = 0;
-    let desafioActual = desafios[0]; 
+    let desafioActual = desafios[0];
 
     // Funciones
     
@@ -155,6 +167,4 @@
         setInterval(cuentaAtras,1000);
     };
 
-    inicializar();
-    setInterval(cuentaAtras,1000);
-    
+    $iniciar.onclick = iniciarJuego;

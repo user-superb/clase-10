@@ -138,6 +138,8 @@
                 respuestaIncorrecta();
             };
 
+            $respuesta.value = '';
+
             event.preventDefault();
         };
     };

@@ -19,8 +19,6 @@
 
     const cajaObjetivo = new colorBox(document.querySelector('#cajaObjetivo'));
 
-    asignarOnClick(); // Asigna los eventos onclick para cada caja
-
     const valores = {
         rojo: 'rgb(224,102,102)',
         verde: 'rgb(147,196,125)',
@@ -99,52 +97,4 @@
 
         cajaObjetivo.color = colorRandom;
         cajaObjetivo.elem.style.backgroundColor = cajaObjetivo.color;
-    };
-
-    function asignarOnClick(){
-        const keys = Object.keys(cajas);
-
-        keys.forEach(key => {
-            cajas[key].elem.onclick = (event) => {
-                if (cajas[key].color == cajaObjetivo.color && cajas[key].color !== undefined){ // Si el color de la caja clickeada es el mismo que el de la caja objetivo, y el color es distinto a undefined, entonces
-                    respuestaCorrecta();
-                } else {
-                    respuestaIncorrecta();
-                }};
-        });
-    };
-
-    function respuestaIncorrecta(){
-        if (!yaRespondio){
-            $resultado.textContent = mensajeEsIncorrecto;
-            $resultado.classList.remove('ocultar');
-        }
-
-        yaRespondio = true;
-    };
-
-    function respuestaCorrecta(){
-        if (!yaRespondio){
-            $resultado.textContent = mensajeEsCorrecto;
-            $resultado.classList.remove('ocultar');
-        }
-
-        yaRespondio = true;
-    };
-
-    function reiniciarRespuesta(){
-        $resultado.classList.add('ocultar');
-        yaRespondio = false;
-    };
-
-    function cambiarPuntos(){
-        if ($resultado.textContent == mensajeEsIncorrecto){
-            cantidadPuntos--;
-        } else if ($resultado.textContent == mensajeEsCorrecto){
-            cantidadPuntos++;
-        } else {
-            cantidadPuntos--; // El usuario no respondio
-        }
-
-        $puntos.textContent = cantidadPuntos;
     };

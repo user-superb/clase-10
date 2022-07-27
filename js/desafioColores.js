@@ -11,7 +11,11 @@
         c3: new colorBox(document.querySelector('#caja3')),
         c4: new colorBox(document.querySelector('#caja4')),
         c5: new colorBox(document.querySelector('#caja5')),
-        c6: new colorBox(document.querySelector('#caja6'))
+        c6: new colorBox(document.querySelector('#caja6')),
+        c7: new colorBox(document.querySelector('#caja7')),
+        c8: new colorBox(document.querySelector('#caja8')),
+        c9: new colorBox(document.querySelector('#caja9')),
+        c10: new colorBox(document.querySelector('#caja10'))
     };
 
     // Desafortunadamente hay que poner manualmente cada caja, en este objeto y en el index.html
@@ -26,7 +30,10 @@
         amarillo: 'rgb(255,217,102)',
         purpura: 'rgb(103,78,167)',
         naranja: 'rgb(246,178,107)',
-        rosa: 'rgb(194,123,160)'
+        rosa: 'rgb(194,123,160)',
+        blanco: 'rgb(255,255,255)',
+        gris: 'rgb(194,194,194)',
+        negro: 'rgb(0,0,0)'
     };
 
     const colores = generarArrayColores(valores);

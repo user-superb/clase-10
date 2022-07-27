@@ -1,2 +1,2 @@
 # Clase 10 - Simon Dice
-Cada 5 segundos se presenta un color y el usuario debe clickear la caja que corresponda con el color mostrado. Si responde bien gana 1 punto, si responde mal o no responde pierde 1 punto.
+Cada 5 segundos al usuario se le presenta un nuevo desafio, si responde bien suma 1 punto, y si responde mal pierde 1 punto.

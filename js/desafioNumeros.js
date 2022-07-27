@@ -40,6 +40,6 @@
         return '';
     };
 
-    function asignarEnviar(){
-        
-    }
+    function generarMensaje(operador, numeros){
+        return `Haz ${numeros.x} ${operador} ${numeros.y}!: `
+    };

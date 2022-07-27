@@ -17,9 +17,13 @@
     font-size: 50px;
 }
 
-#desafio-colores{
+#colores{
     display: flex;
     justify-content: center;
+}
+
+#desafio-numeros{
+    text-align: center;
 }
 
 #cajaObjetivo {
@@ -37,5 +41,5 @@
 }
 
 .ocultar {
-    visibility: hidden;
+    display: none;
 }
